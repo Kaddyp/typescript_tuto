@@ -1,47 +1,20 @@
-// explicit types
-let charactor: string;
-let age: number;
-let isLoggedIn: boolean;
+// Dynamic Types
 
-// age = 'xyz';
-age = 30;
+let age: any = 25;
 
-// charactor = 20;
-charactor = 'xyz';
+age = true;
+console.log(age);
+age = 'hello world';
+console.log(age);
+age = {name: 'John'}
+console.log(age);
 
+let mixed: any[] = [];
 
-
-
-// arrays
-let sugis: string[] = [];
-
-//sugis = ['Sugisu', 'Gyoza', 'Sashimi'];
-//sugis = [10, 20, 13];
-
-sugis.push('Sugisu');
-
-
-// union types
-let mixed: (string|number|boolean)[] = [];
-mixed.push('hello world');
-mixed.push(20);
+mixed.push(25);
+mixed.push('hello');
 mixed.push(true);
-console.log(mixed);
 
-// union type on normal variable
-let uid: string|number;
-uid = '123';
-uid = 123;
-//uid= true; boolean not define in declaration
-
-// objects
-let sugiOne: object;
-sugiOne = {name: 'kaddy', age: 30};
-
-let sugiTwo: {
-    name: string,
-    age: number,
-    isLoggedIn: boolean
-}
-
-sugiTwo = {name: 'kaddy', age: 30, isLoggedIn: true};
+let sugi: {name: any, age: any};
+sugi = {name: 'kaddy', age: 30};
+console.log(sugi);

@@ -1,3 +1,3 @@
 Hello, Welcome to TypeScript programming
 
-// Explicit Types TypeScript
+// Dynamic Types TypeScript
