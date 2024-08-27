@@ -1,6 +1,18 @@
-const character = 'Diyan';
-console.log(character);
+let character = 'Diyan';
+let age = 32;
+let isOnline = false;
 
-const inputs = document.querySelectorAll('input');
-console.log(inputs);
-inputs.forEach(input => console.log(input));
+//character = 20;
+character = 'Kaddy';
+
+//age = 'Kaddy';
+age = 40;
+
+//isOnline = 'yes';
+isOnline = true;
+
+const circ = (diameter: number) =>{
+    return diameter * Math.PI;
+}
+
+console.log(circ(7.5));

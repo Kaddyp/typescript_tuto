@@ -1,5 +1,13 @@
 var character = 'Diyan';
-console.log(character);
-var inputs = document.querySelectorAll('input');
-console.log(inputs);
-inputs.forEach(function (input) { return console.log(input); });
+var age = 32;
+var isOnline = false;
+//character = 20;
+character = 'Kaddy';
+//age = 'Kaddy';
+age = 40;
+//isOnline = 'yes';
+isOnline = true;
+var circ = function (diameter) {
+    return diameter * Math.PI;
+};
+console.log(circ(7.5));
