@@ -1,13 +1,8 @@
 Hello, Welcome to TypeScript programming
 
-//Introduction: TypeScript
-- Alternative to Javascript(Superset)
-- Allows us to use strict types
-- Supports modern features (arrow functions, let, const)
-- Extra features (generic, interfaces, tuples etc)
+//Compile TypeScript
+tsc inputFilename.ts outputFilename.js
+tsc inputFilename.ts
 
-//Setup: TypeScript
-- Node JS install 
-- Visual Studio
-- install TypeScript compiler (before deploy)
-npm install -g typescript
+//Watch changes in files in compile time TypeScript
+tsc inputFilename.ts -w
