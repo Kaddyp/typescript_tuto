@@ -1,3 +1,3 @@
 Hello, Welcome to TypeScript programming
 
-//Object & Array TypeScript
+// Explicit Types TypeScript

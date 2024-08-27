@@ -1,31 +1,29 @@
-// Arrays
-var names = ['kalynai', 'kaddy', 'diyan']; //Define array we can not change type
-names.push('AArvik');
-// names.push(3);
-// names[0] = 3;
-// name = 'Kalynai'; // we can not change type of names 
-var numbers = [10, 20, 30, 40];
-// numbers.push('Dan');
-// numbers[1] = 'Dan';
-var mixed = ['kaddy', 4, 'diyan', 8, 10, true];
-mixed.push('Dan');
-mixed.push(9);
-mixed[0] = 3;
-// Objects
-// When we define the object we can not add additional properties
-var obj = {
-    name: 'kalynai', //property of type we can not change
-    age: 24,
-    isOnline: false
-};
-obj.isOnline = true;
-obj.age = 40;
-obj.name = 'DAN';
-// obj.age= '40';
-// obj.skills = ['NodeJS', 'ReactJS'];
-obj = {
-    name: 'Yoshi',
-    age: 45,
-    isOnline: true,
-    //skills: ['NodeJS', 'ReactJS']         //error property should be same with data types
-};
+// explicit types
+var charactor;
+var age;
+var isLoggedIn;
+// age = 'xyz';
+age = 30;
+// charactor = 20;
+charactor = 'xyz';
+// arrays
+var sugis = [];
+//sugis = ['Sugisu', 'Gyoza', 'Sashimi'];
+//sugis = [10, 20, 13];
+sugis.push('Sugisu');
+// union types
+var mixed = [];
+mixed.push('hello world');
+mixed.push(20);
+mixed.push(true);
+console.log(mixed);
+// union type on normal variable
+var uid;
+uid = '123';
+uid = 123;
+//uid= true; boolean not define in declaration
+// objects
+var sugiOne;
+sugiOne = { name: 'kaddy', age: 30 };
+var sugiTwo;
+sugiTwo = { name: 'kaddy', age: 30, isLoggedIn: true };
